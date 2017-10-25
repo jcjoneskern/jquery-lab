@@ -6,7 +6,7 @@ $(function() {
     $("ul").append("<li class='available'>" + i + "</li>")
   }
 
-  $(".available").on("click", function() {
+  $("ul").on("click", ".available", function() {
     $("form").removeClass("hidden");
     currentTable = $(this);
   });
