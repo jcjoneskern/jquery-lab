@@ -5,23 +5,33 @@ body {
 }
 
 main {
+  position: relative;
+  width: 100%;
+}
+
+ul {
   margin: 0 auto;
   background: #fff;
   border-radius: 5px;
   width: 50%;
   max-width: 400px;
   padding: 2em;
+  position: relative;
 }
 
 form {
   width: 60%;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: left;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 0 1em rgb(162, 159, 159);
   padding: 1em;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 h1, h3 {
@@ -30,11 +40,6 @@ h1, h3 {
 
 h2 {
   font-family: monospace;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
 }
 
 li {
@@ -53,11 +58,7 @@ button[type=button] {
   color: rgb(162, 159, 159);
   background-color: transparent;
   border: 0;
-}
-
-button[type=button]:after {
-  content: "";
-  clear: both;
+  font-size: 1.2em;
 }
 
 button[type=submit] {
@@ -67,6 +68,7 @@ button[type=submit] {
   text-transform: uppercase;
   border: 0;
   padding: 1em;
+  box-shadow: 0 5px 1em rgb(162, 159, 159);
 }
 
 input {
@@ -85,4 +87,8 @@ input {
 .reserved {
   background: rgb(162, 159, 159);
   color:  rgb(234, 234, 234);
+}
+
+.hidden {
+  display: none;
 }
