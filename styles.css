@@ -1,0 +1,88 @@
+body {
+  background: rgb(227, 215, 212);
+  text-align: center;
+  font-family: sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  max-width: 400px;
+  padding: 2em;
+}
+
+form {
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 1em rgb(162, 159, 159);
+  padding: 1em;
+}
+
+h1, h3 {
+  color: rgb(243, 58, 48);
+}
+
+h2 {
+  font-family: monospace;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+  width: 30%;
+  height: 0;
+  padding: 13% 0 17%;
+  margin: 1.5%;
+}
+
+button[type=button] {
+  float: right;
+  color: rgb(162, 159, 159);
+  background-color: transparent;
+  border: 0;
+}
+
+button[type=button]:after {
+  content: "";
+  clear: both;
+}
+
+button[type=submit] {
+  background: rgb(0, 153, 0);
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  padding: 1em;
+}
+
+input {
+  display: block;
+  border: 0;
+  border-bottom: 1px solid rgb(234, 234, 234);
+  margin: 5% auto;
+  width: 100%;
+}
+
+.available {
+  background: rgb(234, 234, 234);
+  color: rgb(162, 159, 159);
+}
+
+.reserved {
+  background: rgb(162, 159, 159);
+  color:  rgb(234, 234, 234);
+}
