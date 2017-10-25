@@ -98,3 +98,11 @@ input {
 .hidden {
   display: none;
 }
+
+.hide {
+  /*transition for hiding form*/
+}
+
+.show {
+  /*transition for showing form*/
+}

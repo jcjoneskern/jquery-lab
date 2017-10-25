@@ -6,16 +6,22 @@ $(function() {
     $("ul").append("<li class='available'>" + i + "</li>")
   }
 
-  $("ul").on("click", ".available", function() {
-    $("form").removeClass("hidden");
+  $("ul").on("click", ".available", function() { //event delegation
     currentTable = $(this);
+    $("form").removeClass("hidden");
   });
 
   $("button[name=reserve]").on("click", function(e) {
-    currentTable.removeClass("available");
-    currentTable.addClass("reserved");
+    var info = {
+      name: $("input[name=name]").val(),
+      phone: $("input[name=phone]").val(),
+      party: $("input[name=party]").val()
+    }
+
+    currentTable.removeClass("available").addClass("reserved").data(info);
 
     hide(e);
+    $("input[name=name], input[name=phone], input[name=party]").val("");
   });
 
   $("button[type=button]").on("click", hide);
