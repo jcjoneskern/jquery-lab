@@ -107,6 +107,9 @@ span {
 .reserved {
   background: rgb(162, 159, 159);
   color: rgb(234, 234, 234);
+}
+
+.reserved:hover {
   cursor: not-allowed;
 }
 
