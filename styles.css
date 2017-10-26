@@ -79,6 +79,21 @@ input {
   width: 100%;
 }
 
+span {
+  display: block;
+  position: absolute;
+  font-family: monospace;
+  z-index: 1;
+  width: max-content;
+  background: rgb(162, 159, 159);
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 3px;
+  bottom: 0;
+  padding: 3px;
+  text-align: left;
+}
+
 .available {
   background: rgb(234, 234, 234);
   color: rgb(162, 159, 159);
@@ -96,13 +111,20 @@ input {
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+  z-index: 0;
 }
 
 .hide {
-  /*transition for hiding form*/
+  opacity: 0;
+  z-index: 0;
+  -webkit-transition: opacity 250ms ease-in, z-index 1ms ease-in;
+  transition: opacity 250ms ease-in, z-index 1ms 250ms ease-in;
 }
 
 .show {
-  /*transition for showing form*/
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: opacity 250ms ease-in, z-index 1ms ease-in;
+  transition: opacity 250ms ease-in, z-index 1ms ease-in;
 }
